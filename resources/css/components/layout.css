@@ -1,0 +1,20 @@
+.container {
+    @apply px-3;
+}
+
+.row-flex {
+    @apply flex flex-wrap;
+    @apply -mx-3 -mt-6;
+
+    > * {
+        @apply mt-6 px-3;
+    }
+
+    + .row-flex {
+        @apply mt-0;
+    }
+}
+
+.card-item{
+    @apply h-full p-6 bg-gray-800 border-2 border-red-800 rounded-lg shadow flex flex-col justify-between;
+}
